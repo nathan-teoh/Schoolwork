@@ -1,2 +1,2 @@
-#CSCD 240 - C & Unix Programmingwq
+#CSCD 240 - C & Unix Programming
 
