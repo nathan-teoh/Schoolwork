@@ -1,0 +1,10 @@
+##Initializing goodguy army with [1,1,2,0]##
+Witch King noticed 1 hobbits, 1 elves, 2 dwarves, and 0 men
+Saruman noticed 1 hobbits, 1 elves, 2 dwarves, and 0 men
+
+##Killing Saruman, then initializing new army with [4,2,2,100]##
+Saruman has been defeated!
+Witch King noticed 4 hobbits, 2 elves, 2 dwarves, and 100 men
+
+##Killing WitchKing##
+Witch King has been defeated!

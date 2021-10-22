@@ -1,0 +1,17 @@
+C:\Users\User\source\repos\MidQuarterProject\MidQuarterProject\bin\Debug\MidQuarterProject.exe.config
+C:\Users\User\source\repos\MidQuarterProject\MidQuarterProject\bin\Debug\MidQuarterProject.exe
+C:\Users\User\source\repos\MidQuarterProject\MidQuarterProject\bin\Debug\MidQuarterProject.pdb
+C:\Users\User\source\repos\MidQuarterProject\MidQuarterProject\obj\Debug\MidQuarterProject.csprojAssemblyReference.cache
+C:\Users\User\source\repos\MidQuarterProject\MidQuarterProject\obj\Debug\MainWindow.g.cs
+C:\Users\User\source\repos\MidQuarterProject\MidQuarterProject\obj\Debug\App.g.cs
+C:\Users\User\source\repos\MidQuarterProject\MidQuarterProject\obj\Debug\MidQuarterProject_MarkupCompile.cache
+C:\Users\User\source\repos\MidQuarterProject\MidQuarterProject\obj\Debug\MidQuarterProject_MarkupCompile.lref
+C:\Users\User\source\repos\MidQuarterProject\MidQuarterProject\obj\Debug\MainWindow.baml
+C:\Users\User\source\repos\MidQuarterProject\MidQuarterProject\obj\Debug\MidQuarterProject.g.resources
+C:\Users\User\source\repos\MidQuarterProject\MidQuarterProject\obj\Debug\MidQuarterProject.Properties.Resources.resources
+C:\Users\User\source\repos\MidQuarterProject\MidQuarterProject\obj\Debug\MidQuarterProject.csproj.GenerateResource.cache
+C:\Users\User\source\repos\MidQuarterProject\MidQuarterProject\obj\Debug\MidQuarterProject.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\MidQuarterProject\MidQuarterProject\obj\Debug\MidQuarterProject.exe
+C:\Users\User\source\repos\MidQuarterProject\MidQuarterProject\obj\Debug\MidQuarterProject.pdb
+C:\Users\User\source\repos\MidQuarterProject\MidQuarterProject\bin\Debug\System.Data.SQLite.dll
+C:\Users\User\source\repos\MidQuarterProject\MidQuarterProject\obj\Debug\MidQuarterProject.csproj.CopyComplete

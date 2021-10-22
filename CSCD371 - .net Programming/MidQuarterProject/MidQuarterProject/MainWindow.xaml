@@ -1,0 +1,80 @@
+﻿<Window x:Class="MidQuarterProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MidQuarterProject"
+        mc:Ignorable="d"
+        Title="File Watcher Program by Junyu Teoh" Height="800" Width="800"
+        ResizeMode="NoResize">
+
+    <Grid Name="MainPage" Width="Auto">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="391*"/>
+            <ColumnDefinition Width="6*"/>
+        </Grid.ColumnDefinitions>
+        <Menu x:Name="menuBar" VerticalAlignment="Top" Grid.ColumnSpan="2">
+            <MenuItem Header="_File">
+                <MenuItem Header="Start" Click="clickStart"/>
+                <MenuItem Header="Stop" Click="clickStop"/>
+                <MenuItem Header="Query Database(file extension)" Click="queryDatabaseClick"/>
+                <MenuItem Header="Close" Click="clickExit"/>
+            </MenuItem>
+            <MenuItem Header="_Edit">
+                <MenuItem Header="Save to SQL Database">
+                    <MenuItem Header="Enable" Name="enableSQL" Click="sqlEnable"/>
+                    <MenuItem Header="Disable" Name="disableSQL" Click="sqlDisable"/>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="_Help">
+                <MenuItem Name="Helpbutton" Click="Helpbutton_Click" Header="Help"/>
+                <MenuItem Click="aboutClick" Header="About"/>
+            </MenuItem>
+        </Menu>
+        <ToolBar Name="toolBar" Margin="0,18,0,716" Grid.ColumnSpan="2">
+            <Button x:Name="Start" Height="28" Click="clickStart" Width="28" ToolTip="Start Watcher" >
+                <Button.Background>
+                    <ImageBrush ImageSource="start.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Stop" Height="28" Click="clickStop" Width="28" IsEnabled="False" ToolTip="Stop Watcher">
+                <Button.Background>
+                    <ImageBrush ImageSource="stop.png" />
+                </Button.Background>
+            </Button>
+            <Button x:Name="SqlToolButton" Height="28" Click="SqlToolButton_Click" Width="28" ToolTip="Push unsaved changes into SQL database">
+                <Button.Background>
+                    <ImageBrush ImageSource="sql.png" />
+                </Button.Background>
+            </Button>
+        </ToolBar>
+        <Label Content="DIRECTORY:" Margin="10,62,681,674"/>
+        <TextBox x:Name="pathInput" Margin="10,97,233,638" TextWrapping="Wrap" ToolTip="Full path to the directory you would like to watch."/>
+
+
+        <Label Content=".EXTENSION: (empty= ALL files)" Margin="605,62,0,674" Grid.ColumnSpan="2"/>
+        <Label Content="." Margin="595,102,162,634"/>
+        <TextBox x:Name="extensionInput" Margin="605,97,62,638" TextWrapping="Wrap" ToolTip="Specify specific file extension to watch"/>
+        <ComboBox Margin="729,97,10,638" Grid.ColumnSpan="2">
+            <ComboBoxItem PreviewMouseLeftButtonDown="blankOption" Height="26" ToolTip="ALL files">   </ComboBoxItem>
+            <ComboBoxItem PreviewMouseLeftButtonDown="pdfOption">.pdf</ComboBoxItem>
+            <ComboBoxItem  PreviewMouseLeftButtonDown="txtOption">.txt</ComboBoxItem>
+        </ComboBox>
+
+        <Button MaxHeight="35" MaxWidth="65" Margin="605,164,91,571" Click="clickStart" Name="startButtons" >Start</Button>
+        <Button MaxHeight="35" MaxWidth="65" Margin="684,164,12,571" Click="clickStop" Name="stopButtons" IsEnabled="False">Stop</Button>
+
+        <Label Content="File Watcher View" Margin="10,219,583,517"/>
+        <DataGrid Margin="0,254,0,0" Name="ViewGrid" AreRowDetailsFrozen="False" Grid.ColumnSpan="2" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header = "Time"  Binding="{Binding changeTime}"/>
+                <DataGridTextColumn Header = "Change Type" Binding="{Binding ChangeType}" />
+                <DataGridTextColumn Header = "File Name"  Binding="{Binding OldName}"/>
+                <DataGridTextColumn Header = "Full Path" Binding="{Binding FullPath}" />
+                <DataGridTextColumn Header = "New Name"  Binding="{Binding Name}"/>
+                <DataGridTextColumn Header = "Extension"  Binding="{Binding ext}"/>
+            </DataGrid.Columns>
+
+        </DataGrid>
+    </Grid>
+</Window>

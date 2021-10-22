@@ -1,0 +1,26 @@
+﻿<Window x:Class="MidQuarterProject.helpWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MidQuarterProject"
+        mc:Ignorable="d"
+        Title="helpWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Welcome to the Help page&#xA;MENUBAR:&#xA;        
+               FILE:&#xA;             
+               START: Start the watcher&#xA;             
+               STOP: Stop the watcher&#xA;             
+               QUERY DATABASE: Open database query window&#xA;             
+               Close: Exit Program&#xA;        
+               EDIT:&#xA;             
+               Save To SQL Database: Option to toggle automatic log save into database. Database is MidtermAssignment.db
+               &#xA;
+TOOLBAR:&#xA;
+                      PLAYICON: Start watcher&#xA;
+                      STOPICON: Stop watcher&#xA;
+                      SQLICON: Push unsaved logs into database.
+               "/>
+ 
+    </Grid>
+</Window>
